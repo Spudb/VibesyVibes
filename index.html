@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibes Workshop: build a website by describing it</title>
+  <meta name="description" content="A beginner workshop where you build and ship a small website by describing it to an AI. Part of Vibes by Hack Club.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <a class="logo" href="#top">Vibes workshop</a>
+    <nav aria-label="Main">
+      <a href="#idea">The idea</a>
+      <a href="#steps">Steps</a>
+      <a href="#submit">Submit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <h1>You don't need to know how to code. You need to know what you want.</h1>
+      <p class="lead">In this workshop you'll build a real website by describing it to an AI, fixing what's off, and putting it online for anyone to open.</p>
+
+      <div class="prompt-box" aria-label="Example of a prompt and its result">
+        <div class="prompt-line">
+          <span class="prompt-label">You</span>
+          <span class="typed">make a website for my cat, Biscuit, with a nap-o-meter</span>
+        </div>
+        <div class="result">
+          <strong>Biscuit's Nap Tracker</strong>
+          <div class="meter"><span></span></div>
+          <small>Nap level: 87%. Do not disturb.</small>
+        </div>
+      </div>
+
+      <a class="btn" href="#steps">See how to build it</a>
+    </section>
+
+    <section id="idea" class="block">
+      <h2>What is vibe coding?</h2>
+      <p>Vibe coding means telling an AI what you want in plain language and letting it write the code. You act like a director: you describe, look at the result, and ask for changes until it feels right.</p>
+      <p>This workshop is part of <strong>Vibes by Hack Club</strong>. By the end, every person in the room will have shipped a project of their own.</p>
+
+      <div class="facts">
+        <div>
+          <h3>Who it's for</h3>
+          <p>Students with zero coding experience. Curious beginners are the point.</p>
+        </div>
+        <div>
+          <h3>How long</h3>
+          <p>About 90 minutes, from blank page to live link.</p>
+        </div>
+        <div>
+          <h3>What you need</h3>
+          <p>A laptop, an internet connection, and a free AI chat tool.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="steps" class="block">
+      <h2>Build your project in 7 steps</h2>
+      <p>Follow these in order. Each one takes about ten minutes.</p>
+
+      <ol class="steps">
+        <li>
+          <h3>Pick a small idea</h3>
+          <p>Choose something you'd enjoy making: a fan page, a quiz, a countdown to summer break, a tiny game. Small ideas finish. Big ideas stall.</p>
+        </li>
+        <li>
+          <h3>Open an AI tool</h3>
+          <p>Use any AI chat tool that can write code, such as Claude. Start a new chat so it has a clean slate.</p>
+        </li>
+        <li>
+          <h3>Write your first prompt</h3>
+          <p>Say what it is, who it's for, and how it should look. Ask for a single <code>index.html</code> file with the CSS inside it.</p>
+          <pre><code>Make a one-page website for a countdown to summer
+break. Bright yellow and blue, big numbers, and a
+button that changes the background color.</code></pre>
+        </li>
+        <li>
+          <h3>Save and open the result</h3>
+          <p>Copy the code into a file called <code>index.html</code>, then double-click it. It opens in your browser.</p>
+        </li>
+        <li>
+          <h3>Iterate</h3>
+          <p>Ask for one change at a time: "make the title bigger", "add a confetti animation", "the button is hard to read". Be specific about what's wrong.</p>
+        </li>
+        <li>
+          <h3>Fix what breaks</h3>
+          <p>If something doesn't work, tell the AI exactly what you see, or paste in the error message. Test on your phone too.</p>
+        </li>
+        <li>
+          <h3>Put it online</h3>
+          <p>Upload your files to a free host like GitHub Pages or Netlify. You'll get a link anyone can open.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="submit" class="block">
+      <h2>How to send your project</h2>
+      <p>Before you submit, check that:</p>
+      <ul class="checklist">
+        <li>Your project has a live link that opens without logging in.</li>
+        <li>It works on a phone and a laptop.</li>
+        <li>You can explain, in a sentence, what you asked the AI to do.</li>
+        <li>Your code is in a public GitHub repository.</li>
+      </ul>
+
+      <div class="submit-card">
+        <p>When your link works, send it here.</p>
+        <!-- TODO: replace # with the real submission form or repo link -->
+        <a class="btn" href="#">Submit your project</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made for Vibes by Hack Club. Built with a prompt and a few fixes.</p>
+  </footer>
+
+</body>
+</html>
