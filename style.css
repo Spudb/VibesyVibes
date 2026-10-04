@@ -31,14 +31,19 @@ a { color: inherit; }
 
 /* Header */
 .top {
+  position: sticky;
+  top: 0;
+  z-index: 5;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 2rem;
   justify-content: space-between;
   align-items: center;
-  max-width: 64rem;
-  margin: 0 auto;
-  padding: 1.25rem 1.5rem;
+  max-width: none;
+  margin: 0;
+  padding: 1rem max(1.5rem, calc((100% - 64rem) / 2 + 1.5rem));
+  background: var(--sun);
+  border-bottom: 3px solid var(--ink);
 }
 
 .logo {
@@ -306,4 +311,24 @@ footer {
   .typed { animation: none; width: auto; border-right: 0; white-space: normal; }
   .meter span { animation: none; }
   .btn { transition: none; }
+}
+
+.flag {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  z-index: 10;
+}
+
+.flag img {
+  display: block;
+  width: 6rem;
+}
+
+@media (max-width: 70rem) {
+  .top {padding-left: 8rem;}
+}
+
+html {
+  scroll-padding-top: 5rem;
 }
